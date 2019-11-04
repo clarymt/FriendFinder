@@ -37,6 +37,7 @@
          
           <div class="card-body">
             <form role="form">
+
          <h3>About you</h3>
               <div class="form-group">
                 <label for="name">Name (Required)</label>
@@ -229,7 +230,7 @@
                 <div class="col-12"> 
                     <h4>"I don't eat meat."</h4>
                 </div>
-                
+
                       <select class="custom-select" id="q10">
                         <option selected>Select an Option</option>
                         <option value="1">One (Strongly Disagree)</option>
@@ -253,9 +254,10 @@
 
     <footer class="footer">
       <div class="container">
-        <p>
-          <a href="/api/tables">API Table Link</a> |
-          <a href="/api/waitlist">API Wait List</a>
+        <p><a href="/api/friends">API of Compatibility Results</a>
+           | 
+           <a href="https://github.com/clarymt/FriendFinder">GitHub Repo</a>
+        </p>
       </div>
     </footer>
 
@@ -276,38 +278,36 @@
     event.preventDefault();
 
     // Here we grab the form elements
-    var newReservation = {
-      customerName: $("#reserve-name").val().trim(),
-      phoneNumber: $("#reserve-phone").val().trim(),
-      customerEmail: $("#reserve-email").val().trim(),
-      customerID: $("#reserve-unique-id").val().trim()
+    var newFriend = {
+      name: $("#name").val().trim(),
+      photo: $("#photo").val().trim(),
+      //scores: $("#scores").val().trim(),
     };
 
-    console.log(newReservation);
+    console.log(newFriend);
 
     // This line is the magic. It"s very similar to the standard ajax function we used.
     // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
     // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
     // depending on if a tables is available or not.
 
-    $.post("/api/tables", newReservation,
+    $.post("/api/friends", newFriend,
       function(data) {
 
         // If a table is available... tell user they are booked.
         if (data) {
-          alert("Yay! You are officially booked!");
+          alert("Yay! You have a match!");
         }
 
         // If a table is available... tell user they on the waiting list.
         else {
-          alert("Sorry you are on the wait list");
+          alert("You suck!");
         }
 
         // Clear the form when submitting
-        $("#reserve-name").val("");
-        $("#reserve-phone").val("");
-        $("#reserve-email").val("");
-        $("#reserve-unique-id").val("");
+        $("#name").val("");
+        $("#photo").val("");
+        //$("#scores").val("Select an option");
 
       });
 
