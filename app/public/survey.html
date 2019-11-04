@@ -57,7 +57,7 @@
                 <div class="col-12"> 
                 <h4>Spongebob is better than Rick & Morty.</h4>
                 </div>       
-                      <select class="custom-select" id="q1">
+                      <select class="custom-select" for="scores" id="q1">
                         <option selected>Select an Option</option>
                         <option value="1">One (Strongly Disagree)</option>
                         <option value="2">Two</option>
@@ -75,7 +75,7 @@
                 <div class="col-12">  
                     <h4>Breaking Bad is the best television series ever made.</h4>
                 </div> 
-                      <select class="custom-select" id="q2">
+                      <select class="custom-select" for="scores" id="q2">
                         <option selected>Select an Option</option>
                         <option value="1">One (Strongly Disagree)</option>
                         <option value="2">Two</option>
@@ -93,7 +93,7 @@
             <div class="col-12"> 
                 <h4>"It's too cold outside I don't want to leave my room."</h4>
             </div>          
-                      <select class="custom-select" id="q3">
+                      <select class="custom-select" for="scores" id="q3">
                         <option selected>Select an Option</option>
                         <option value="1">One (Strongly Disagree)</option>
                         <option value="2">Two</option>
@@ -112,7 +112,7 @@
             <div class="col-12"> 
                 <h4>The last episode of Game of Thrones sucked.</h4>
             </div>
-                      <select class="custom-select" id="q4">
+                      <select class="custom-select" for="scores" id="q4">
                         <option selected>Select an Option</option>
                         <option value="1">One (Strongly Disagree)</option>
                         <option value="2">Two</option>
@@ -131,7 +131,7 @@
             <div class="col-12"> 
                 <h4>Camping is better than Netflix.</h4>
             </div>
-                    <select class="custom-select" id="q5">
+                    <select class="custom-select" for="scores" id="q5">
                         <option selected>Select an Option</option>
                         <option value="1">One (Strongly Disagree)</option>
                         <option value="2">Two</option>
@@ -151,7 +151,7 @@
                     <h4>"Too many taxes are taken out of my paycheck."</h4>
                 </div>
 
-                      <select class="custom-select" id="q6">
+                      <select class="custom-select" for="scores" id="q6">
                         <option selected>Select an Option</option>
                         <option value="1">One (Strongly Disagree)</option>
                         <option value="2">Two</option>
@@ -171,7 +171,7 @@
                     <h4>Cookie Dough ice cream is far superior to Mint Chocolate Chip</h4>
                 </div>   
 
-                      <select class="custom-select" id="q7">
+                      <select class="custom-select" for="scores" id="q7">
                         <option selected>Select an Option</option>
                         <option value="1">One (Strongly Disagree)</option>
                         <option value="2">Two</option>
@@ -191,7 +191,7 @@
                     <h4>Dogs are better than Cats.</h4>
                 </div>
 
-                      <select class="custom-select" id="q8">
+                      <select class="custom-select" for="scores" id="q8">
                         <option selected>Select an Option</option>
                         <option value="1">One (Strongly Disagree)</option>
                         <option value="2">Two</option>
@@ -211,7 +211,7 @@
                     <h4>"I dont know, I was thinking about moving to Colorado..."</h4>
                 </div> 
 
-                      <select class="custom-select" id="q9">
+                      <select class="custom-select" for="scores" id="q9">
                         <option selected>Select an Option</option>
                         <option value="1">One (Strongly Disagree)</option>
                         <option value="2">Two</option>
@@ -231,7 +231,7 @@
                     <h4>"I don't eat meat."</h4>
                 </div>
 
-                      <select class="custom-select" id="q10">
+                      <select class="custom-select" for="scores" id="q10">
                         <option selected>Select an Option</option>
                         <option value="1">One (Strongly Disagree)</option>
                         <option value="2">Two</option>
@@ -281,7 +281,7 @@
     var newFriend = {
       name: $("#name").val().trim(),
       photo: $("#photo").val().trim(),
-      //scores: $("#scores").val().trim(),
+      scores: $("#scores").val().trim(),
     };
 
     console.log(newFriend);
@@ -301,13 +301,13 @@
 
         // If a table is available... tell user they on the waiting list.
         else {
-          alert("You suck!");
+          alert("Fill it out ya doofus!");
         }
 
         // Clear the form when submitting
         $("#name").val("");
         $("#photo").val("");
-        //$("#scores").val("Select an option");
+        $("#scores").val("Select an option");
 
       });
 
