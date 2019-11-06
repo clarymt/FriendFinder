@@ -2,266 +2,275 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Survey Page</title>
+    <meta charset="UTF-8">
+    <title>Survey Page</title>
 
-  <!-- Latest compiled and minified CSS & JS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 </head>
 
 <body>
 
-  <div class="container">
+    <div class="container">
 
-    <div class="jumbotron">
-      <h1 class="text-center">
-        <span class="fa fa-fire"></span> Friend Finder Survey</h1>
-      <hr>
-      <h2 class="text-center">Find your Match!</h2>
-      <br>
-        <a href="*">
-          <button class="btn btn-lg btn-default">
-            <span class="fa fa-home"></span>
-          </button>
-        </a>
-      </div>
+        <div class="jumbotron">
+            <h1 class="text-center">
+                <span class="fa fa-fire"></span> Friend Finder Survey</h1>
+            <hr>
+            <h2 class="text-center">Find your Match!</h2>
+            <br>
+            <a href="*">
+                <button class="btn btn-lg btn-default">
+                    <span class="fa fa-home"></span>
+                </button>
+            </a>
+        </div>
     </div>
     <div class="row">
-      <div class="col-lg-12">
-        <!-- Reservation Page -->
-        <div class="card">
-         
-          <div class="card-body">
-            <form role="form">
+        <div class="col-lg-12">
+            <!-- Reservation Page -->
+            <div class="card">
 
-         <h3>About you</h3>
-              <div class="form-group">
-                <label for="name">Name (Required)</label>
-                <input type="text" class="form-control" id="name" required>
-              </div>
-              <div class="form-group">
-                <label for="photo">Link to Photo Image (Required)</label>
-                <input type="text" class="form-control" id="photo" required>
-              </div>
-        <hr>
-            <div class="input-group row no-gutters">
+                <div class="card-body">
+                    <form role="form">
 
-                <div class="col-12"> 
-                <h3>Question 1</h3>
+                        <h3>About you</h3>
+                        <div class="form-group">
+                            <label for="name">Name (Required)</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="photo">Link to Photo Image (Required)</label>
+                            <input type="text" class="form-control" id="photo" required>
+                        </div>
+                        <hr>
+                        <div class="input-group row no-gutters">
+
+                            <div class="col-12">
+                                <h3>Question 1</h3>
+                            </div>
+
+                            <div class="col-12">
+                                <h4>Spongebob is better than Rick & Morty.</h4>
+                            </div>
+                            <select class="custom-select scores" for="scores" id="q1">
+                                <option selected>Select an Option</option>
+                                <option value="1">One (Strongly Disagree)</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five (Strongly Agree)</option>
+                            </select>
+                        </div>
+                        <hr>
+
+                        <div class="input-group row no-gutters">
+                            <div class="col-12">
+                                <h3>Question 2</h3>
+                            </div>
+
+                            <div class="col-12">
+                                <h4>Breaking Bad is the best television series ever made.</h4>
+                            </div>
+                            <select class="custom-select scores" for="scores" id="q2">
+                                <option selected>Select an Option</option>
+                                <option value="1">One (Strongly Disagree)</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five (Strongly Agree)</option>
+                            </select>
+                        </div>
+                        <hr>
+
+                        <div class="input-group row no-gutters">
+                            <div class="col-12">
+                                <h3>Question 3</h3>
+                            </div>
+
+                            <div class="col-12">
+                                <h4>"It's too cold outside I don't want to leave my room."</h4>
+                            </div>
+                            <select class="custom-select scores" for="scores" id="q3">
+                                <option selected>Select an Option</option>
+                                <option value="1">One (Strongly Disagree)</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five (Strongly Agree)</option>
+                            </select>
+                        </div>
+                        <hr>
+
+                        <div class="input-group row no-gutters">
+
+                            <div class="col-12">
+                                <h3>Question 4</h3>
+                            </div>
+
+                            <div class="col-12">
+                                <h4>The last episode of Game of Thrones sucked.</h4>
+                            </div>
+                            <select class="custom-select scores" for="scores" id="q4">
+                                <option selected>Select an Option</option>
+                                <option value="1">One (Strongly Disagree)</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five (Strongly Agree)</option>
+                            </select>
+                        </div>
+                        <hr>
+
+                        <div class="input-group row no-gutters">
+
+                            <div class="col-12">
+                                <h3>Question 5</h3>
+                            </div>
+
+                            <div class="col-12">
+                                <h4>Camping is better than Netflix.</h4>
+                            </div>
+                            <select class="custom-select scores" for="scores" id="q5">
+                                <option selected>Select an Option</option>
+                                <option value="1">One (Strongly Disagree)</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five (Strongly Agree)</option>
+                            </select>
+                        </div>
+                        <hr>
+
+                        <div class="input-group row no-gutters">
+
+                            <div class="col-12">
+                                <h3>Question 6</h3>
+                            </div>
+
+                            <div class="col-12">
+                                <h4>"Too many taxes are taken out of my paycheck."</h4>
+                            </div>
+
+                            <select class="custom-select scores" for="scores" id="q6">
+                                <option selected>Select an Option</option>
+                                <option value="1">One (Strongly Disagree)</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five (Strongly Agree)</option>
+                            </select>
+                        </div>
+                        <hr>
+
+                        <div class="input-group row no-gutters">
+
+                            <div class="col-12">
+                                <h3>Question 7</h3>
+                            </div>
+
+                            <div class="col-12">
+                                <h4>Cookie Dough ice cream is far superior to Mint Chocolate Chip</h4>
+                            </div>
+
+                            <select class="custom-select scores" for="scores" id="q7">
+                                <option selected>Select an Option</option>
+                                <option value="1">One (Strongly Disagree)</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five (Strongly Agree)</option>
+                            </select>
+                        </div>
+                        <hr>
+
+                        <div class="input-group row no-gutters">
+
+                            <div class="col-12">
+                                <h3>Question 8</h3>
+                            </div>
+
+                            <div class="col-12">
+                                <h4>Dogs are better than Cats.</h4>
+                            </div>
+
+                            <select class="custom-select scores" for="scores" id="q8">
+                                <option selected>Select an Option</option>
+                                <option value="1">One (Strongly Disagree)</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five (Strongly Agree)</option>
+                            </select>
+                        </div>
+                        <hr>
+
+                        <div class="input-group row no-gutters">
+
+                            <div class="col-12">
+                                <h3>Question 9</h3>
+                            </div>
+
+                            <div class="col-12">
+                                <h4>"I dont know, I was thinking about moving to Colorado..."</h4>
+                            </div>
+
+                            <select class="custom-select scores" for="scores" id="q9">
+                                <option selected>Select an Option</option>
+                                <option value="1">One (Strongly Disagree)</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five (Strongly Agree)</option>
+                            </select>
+                        </div>
+                        <hr>
+
+                        <div class="input-group row no-gutters">
+
+                            <div class="col-12">
+                                <h3>Question 10</h3>
+                            </div>
+
+                            <div class="col-12">
+                                <h4>"I don't eat meat."</h4>
+                            </div>
+
+                            <select class="custom-select scores" for="scores" id="q10">
+                                <option selected>Select an Option</option>
+                                <option value="1">One (Strongly Disagree)</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five (Strongly Agree)</option>
+                            </select>
+                        </div>
+
+                        <br>
+
+                        <button type="submit" class="btn btn-primary submit">Submit</button>
+
+                    </form>
                 </div>
-
-                <div class="col-12"> 
-                <h4>Spongebob is better than Rick & Morty.</h4>
-                </div>       
-                      <select class="custom-select" for="scores" id="q1">
-                        <option selected>Select an Option</option>
-                        <option value="1">One (Strongly Disagree)</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                        <option value="4">Four</option>
-                        <option value="5">Five (Strongly Agree)</option>
-                      </select>    
-            </div><hr>
-
-        <div class="input-group row no-gutters">
-                <div class="col-12"> 
-                    <h3>Question 2</h3>
-                </div>
-                
-                <div class="col-12">  
-                    <h4>Breaking Bad is the best television series ever made.</h4>
-                </div> 
-                      <select class="custom-select" for="scores" id="q2">
-                        <option selected>Select an Option</option>
-                        <option value="1">One (Strongly Disagree)</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                        <option value="4">Four</option>
-                        <option value="5">Five (Strongly Agree)</option>
-                      </select>    
-            </div><hr>
-
-        <div class="input-group row no-gutters">
-                <div class="col-12">    
-                    <h3>Question 3</h3>
-                </div>
-
-            <div class="col-12"> 
-                <h4>"It's too cold outside I don't want to leave my room."</h4>
-            </div>          
-                      <select class="custom-select" for="scores" id="q3">
-                        <option selected>Select an Option</option>
-                        <option value="1">One (Strongly Disagree)</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                        <option value="4">Four</option>
-                        <option value="5">Five (Strongly Agree)</option>
-                      </select>    
-            </div><hr>
-
-        <div class="input-group row no-gutters">
-
-            <div class="col-12">     
-                <h3>Question 4</h3>
             </div>
-
-            <div class="col-12"> 
-                <h4>The last episode of Game of Thrones sucked.</h4>
-            </div>
-                      <select class="custom-select" for="scores" id="q4">
-                        <option selected>Select an Option</option>
-                        <option value="1">One (Strongly Disagree)</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                        <option value="4">Four</option>
-                        <option value="5">Five (Strongly Agree)</option>
-                      </select>    
-            </div><hr>
-
-        <div class="input-group row no-gutters">
-                
-            <div class="col-12">      
-                <h3>Question 5</h3>
-            </div>
-            
-            <div class="col-12"> 
-                <h4>Camping is better than Netflix.</h4>
-            </div>
-                    <select class="custom-select" for="scores" id="q5">
-                        <option selected>Select an Option</option>
-                        <option value="1">One (Strongly Disagree)</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                        <option value="4">Four</option>
-                        <option value="5">Five (Strongly Agree)</option>
-                      </select>    
-            </div><hr>
-
-            <div class="input-group row no-gutters">
-
-                <div class="col-12">                
-                    <h3>Question 6</h3>
-                </div> 
-        
-                <div class="col-12">    
-                    <h4>"Too many taxes are taken out of my paycheck."</h4>
-                </div>
-
-                      <select class="custom-select" for="scores" id="q6">
-                        <option selected>Select an Option</option>
-                        <option value="1">One (Strongly Disagree)</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                        <option value="4">Four</option>
-                        <option value="5">Five (Strongly Agree)</option>
-                      </select>    
-            </div><hr>
-
-            <div class="input-group row no-gutters">
-
-                <div class="col-12">         
-                    <h3>Question 7</h3>
-                </div>
-
-                <div class="col-12"> 
-                    <h4>Cookie Dough ice cream is far superior to Mint Chocolate Chip</h4>
-                </div>   
-
-                      <select class="custom-select" for="scores" id="q7">
-                        <option selected>Select an Option</option>
-                        <option value="1">One (Strongly Disagree)</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                        <option value="4">Four</option>
-                        <option value="5">Five (Strongly Agree)</option>
-                      </select>    
-            </div><hr>
-
-            <div class="input-group row no-gutters">
-
-                <div class="col-12">      
-                    <h3>Question 8</h3>
-                </div>
-
-                <div class="col-12"> 
-                    <h4>Dogs are better than Cats.</h4>
-                </div>
-
-                      <select class="custom-select" for="scores" id="q8">
-                        <option selected>Select an Option</option>
-                        <option value="1">One (Strongly Disagree)</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                        <option value="4">Four</option>
-                        <option value="5">Five (Strongly Agree)</option>
-                      </select>    
-            </div><hr>
-
-            <div class="input-group row no-gutters">
-                
-                <div class="col-12"> 
-                    <h3>Question 9</h3>
-                </div>
-        
-                <div class="col-12"> 
-                    <h4>"I dont know, I was thinking about moving to Colorado..."</h4>
-                </div> 
-
-                      <select class="custom-select" for="scores" id="q9">
-                        <option selected>Select an Option</option>
-                        <option value="1">One (Strongly Disagree)</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                        <option value="4">Four</option>
-                        <option value="5">Five (Strongly Agree)</option>
-                      </select>    
-            </div><hr>
-
-            <div class="input-group row no-gutters">
-
-                <div class="col-12">   
-                    <h3>Question 10</h3>
-                </div>
-
-                <div class="col-12"> 
-                    <h4>"I don't eat meat."</h4>
-                </div>
-
-                      <select class="custom-select" for="scores" id="q10">
-                        <option selected>Select an Option</option>
-                        <option value="1">One (Strongly Disagree)</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                        <option value="4">Four</option>
-                        <option value="5">Five (Strongly Agree)</option>
-                      </select>    
-            </div>
-
-        <br>
-
-              <button type="submit" class="btn btn-primary submit">Submit</button>
-            
-            </form>
-          </div>
         </div>
-      </div>
     </div>
 
 
     <footer class="footer">
-      <div class="container">
-        <p><a href="/api/friends">API of Compatibility Results</a>
-           | 
-           <a href="https://github.com/clarymt/FriendFinder">GitHub Repo</a>
-        </p>
-      </div>
+        <div class="container">
+            <p><a href="/api/friends">API of Compatibility Results</a>
+                |
+                <a href="https://github.com/clarymt/FriendFinder">GitHub Repo</a>
+            </p>
+        </div>
     </footer>
 
-  </div>
+    </div>
 
 </body>
 
@@ -269,48 +278,56 @@
 
 <!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
 <script type="text/javascript">
-  // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
-  // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
-  // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
-  // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
+    // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
+    // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
+    // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
+    // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
 
-  $(".submit").on("click", function(event) {
-    event.preventDefault();
+    $(".submit").on("click", function (event) {
+        event.preventDefault();
 
-    // Here we grab the form elements
-    var newFriend = {
-      name: $("#name").val().trim(),
-      photo: $("#photo").val().trim(),
-      scores: $("#scores").val().trim(),
-    };
+        var scores = []
+                $('.scores :selected').each(function (i, sel) {
+                    scores.push($(sel).val());
+                });
+                console.log(scores)
 
-    console.log(newFriend);
+        // Here we grab the form elements
+        var newFriend = {
+            name: $("#name").val().trim(),
+            photo: $("#photo").val().trim(),
+            scores: scores,
+        };
 
-    // This line is the magic. It"s very similar to the standard ajax function we used.
-    // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
-    // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
-    // depending on if a tables is available or not.
+        console.log(newFriend);
 
-    $.post("/api/friends", newFriend,
-      function(data) {
+        // This line is the magic. It"s very similar to the standard ajax function we used.
+        // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
+        // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
+        // depending on if a tables is available or not.
 
-        // If a table is available... tell user they are booked.
-        if (data) {
-          alert("Yay! You have a match!");
-        }
+        $.post("/api/friends", newFriend,
+            function (data) {
 
-        // If a table is available... tell user they on the waiting list.
-        else {
-          alert("Fill it out ya doofus!");
-        }
+                // If a table is available... tell user they are booked.
+                if (data) {
+                    alert("Yay! You have a match!");
+                }
 
-        // Clear the form when submitting
-        $("#name").val("");
-        $("#photo").val("");
-        $("#scores").val("Select an option");
+                // If a table is available... tell user they on the waiting list.
+                else {
+                    alert("Fill it out ya doofus!");
+                }
 
-      });
+                // Clear the form when submitting
+                $("#name").val("");
+                $("#photo").val("");
+                $(".scores").val("Select an option");
 
-  });
+             
+
+            });
+
+    });
 
 </script>
